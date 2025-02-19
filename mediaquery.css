@@ -79,6 +79,9 @@
     .RightR{
         display: none;
     }
+    .RightL .fa-envelope{
+        display: none;
+    }
 
 
 
