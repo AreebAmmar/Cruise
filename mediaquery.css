@@ -75,7 +75,7 @@
         align-items: center;
         width: 120px;
         font-size: 12px;
-        margin-left: 10px;
+        margin-left: 5px;
     }
     .RightR{
         display: none;
@@ -87,30 +87,26 @@
 
 
     .breadscrum{
-        margin-top: 80px;
-        height: 80px;
-        width: 750px;
+        height: 40px;
+        width: 360px;
         background-color: white;
         color:blue;
-        display: flex;
-        align-items: center;
+        margin-top: 50px;
     }
     .breadscrum ul{
         list-style: none;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-
         color: rgb(84, 84, 180);
-        font-size: 20px;
-        margin-left:20px;
-        align-items: center;
-        margin-top: 10px;
+        font-size: 10px;
         font-weight: bold;
+        margin: 0px 5px;
+        padding: 0;
     }
     .breadscrum ul li:hover{
         text-decoration: underline;
-        text-underline-offset: 20px;
+        text-underline-offset: 10px;
         text-decoration-thickness: 1px;
     }
     
