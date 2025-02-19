@@ -1,0 +1,873 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin:0;
+    font-family:"Playfair Display", serif;
+}
+.fixed-navbar {
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+      
+    height: 80px;
+    background-color: rgb(196, 197, 224);
+    color: black;
+    z-index: 1000;
+}
+.logoimage{
+    width:80px;
+    height:80px;
+}
+.WiewText{
+    position: relative;
+    left: 17px;
+    top: -40px;
+    font-weight: 600;
+     
+}
+.OceanText{
+     
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-left: -6px;
+}
+.LeftSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 150px;
+}
+.RightSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 150px;
+    font-size: 20px;
+}
+.RightL:hover,.RightM:hover,.RightR:hover{
+    color:white;
+}
+.RightL{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 220px;
+    justify-content: space-between;
+    margin-right: 30px;
+
+}
+.RightM{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width:220px;
+    margin-right:30px;
+}
+
+
+
+
+
+.breadscrum{
+    margin-top: 80px;
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    color:blue;
+    display: flex;
+    align-items: center;
+}
+.breadscrum ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width:750px;
+     
+    color: rgb(84, 84, 180);
+    font-size: 20px;
+    margin-left: 95px;
+    align-items: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.breadscrum ul li:hover{
+    text-decoration: underline;
+    text-underline-offset: 20px;
+    text-decoration-thickness: 1px;
+}
+
+
+
+
+.Container1{
+    background-image: url(/headersection/fullocean.avif);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 400px;
+    object-fit:cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text1con1{
+    color:white;
+    font-size: 40px;
+     
+    font-weight: bold;
+    text-align: center;
+    padding-top: 50px;
+}
+.text2con1{
+    color:white;
+    font-size: 25px;
+     
+    font-weight: bold;
+    text-align: center;
+    padding-top: 30px;
+}
+.viewcruises{
+    padding: 15px 20px;
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+    border-radius: 40px;
+    background-color:#e60060;
+    color:white;
+    margin-top: 50px;
+    transition: background-color 1s ease-in-out;}
+.viewcruises:hover{
+    background-color: #93288e;
+}
+.imagetext{
+    margin-top: 50px;
+}
+
+.SubContainer1{
+    margin-top: 80px;
+}
+.text1subcon1{
+     
+    font-size: 50px;
+    text-align: center;
+}
+.text2subcon1{
+    font-family:sans-serif;
+    font-size: 25px;
+    text-align: center; 
+}
+
+.Container2{
+margin:50px;
+}
+.text1con2{
+     
+    font-size: 50px;
+}
+.text2con2{
+ 
+font-size: 25px;
+margin-top: 20px;
+}
+.india{
+    background-color: rgb(147,40,142);
+    color: white;
+    padding: 20px 40px;
+     
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    transition: color 1s ease-in-out,background-color 1s ease-in-out;
+}
+.india:hover{
+    background-color:#e60060;
+    color: white;
+}
+
+
+
+.con{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    justify-content: center;
+    column-gap: 20px;
+    align-items: center;
+    row-gap: 20px;
+}
+
+/* #region image1 */
+.img1 {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: url('/cities/chennaibeach.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.img1::before {
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0);
+    transition: background 0.3s ease-in-out;
+}
+.default-text {
+    position: absolute;
+    transition: opacity 0.3s ease-in-out;
+    color: white;
+    font-size: 30px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.description {
+    font-size: 14px;
+     
+    padding: 0px 10px;
+    color: white;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+.explore-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+.explore-btn:hover {
+    background: #0056b3;
+}
+.img1:hover::before {
+    background: rgba(0,0,0, 0.5);
+}
+.img1:hover .default-text {
+    opacity: 0;
+}
+.img1:hover .overlay {
+    opacity: 1;
+}
+/* #endregion */
+/* #region Image2 */
+.img2 {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: url('/cities/goa-dekstop-image.webp') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.img2::before {
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0);
+    transition: background 0.3s ease-in-out;
+}
+.img2:hover::before {
+    background: rgba(0,0,0, 0.5);
+}
+.img2:hover .default-text {
+    opacity: 0;
+}
+.img2:hover .overlay {
+    opacity: 1;
+}
+/* #endregion */
+/* #region Image3 */
+.img3{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: url('/cities/kochi-dekstop-image.webp') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.img3::before {
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0);
+    transition: background 0.3s ease-in-out;
+}
+.img3:hover::before {
+    background: rgba(0,0,0, 0.5);
+}
+.img3:hover .default-text {
+    opacity: 0;
+}
+.img3:hover .overlay {
+    opacity: 1;
+}
+/* #endregion */
+/* #region Image4 */
+.img4{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: url('/cities/Andaman.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.img4::before {
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0);
+    transition: background 0.3s ease-in-out;
+}
+.img4:hover::before {
+    background: rgba(0,0,0, 0.5);
+}
+.img4:hover .default-text {
+    opacity: 0;
+}
+.img4:hover .overlay {
+    opacity: 1;
+}
+/* #endregion */
+/* #region Image5 */
+.img5{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: url('/cities/mumbai-image.webp') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.img5::before {
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0);
+    transition: background 0.3s ease-in-out;
+}
+.img5:hover::before {
+    background: rgba(0,0,0, 0.5);
+}
+.img5:hover .default-text {
+    opacity: 0;
+}
+.img5:hover .overlay {
+    opacity: 1;
+}
+/* #endregion */
+/* #region Image6 */
+.img6{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: url('/cities/lakshadweep-image.webp') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.img6::before {
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0);
+    transition: background 0.3s ease-in-out;
+}
+.img6:hover::before {
+    background: rgba(0,0,0, 0.5);
+}
+.img6:hover .default-text {
+    opacity: 0;
+}
+.img6:hover .overlay {
+    opacity: 1;
+}
+/* #endregion */
+/* #region Image7 */
+.img7{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: url('/cities/KashmirBeach.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.img7::before {
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0);
+    transition: background 0.3s ease-in-out;
+}
+.img7:hover::before {
+    background: rgba(0,0,0, 0.5);
+}
+.img7:hover .default-text {
+    opacity: 0;
+}
+.img7:hover .overlay {
+    opacity: 1;
+}
+/* #endregion */
+/* #region Image8 */
+.img8{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: url('/cities/Nicobar.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.img8::before {
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0);
+    transition: background 0.3s ease-in-out;
+}
+.img8:hover::before {
+    background: rgba(0,0,0, 0.5);
+}
+.img8:hover .default-text {
+    opacity: 0;
+}
+.img8:hover .overlay {
+    opacity: 1;
+}
+/* #endregion */
+
+.Container3{
+    margin: 50px;
+}
+.SubContainer3_1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.SubCon3_2{
+    display: grid;
+    grid-template-rows: repeat(5,1fr);
+    row-gap: 20px;
+}
+.SubContainer3_2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+}
+.text1con3{
+    font-size:40px;
+    font-family:"Playfair Display", serif;
+
+}
+.text2con3{
+    font-size:20px;
+    font-family:sans-serif;
+    margin-top: 15px;
+    color:#93288e;
+    font-weight: 500;
+    font-family:"Playfair Display", serif;
+
+}
+.btncon3_1{
+    color: white;
+    background-color: rgb(147,40,142);
+    border: none;
+    border-radius: 5px;
+    padding: 15px 15px;
+    font-family:"Playfair Display", serif;
+
+    font-size: 15px;
+    font-weight: bold;
+    transition: color 1s ease-in-out,background-color 1s ease-in-out;
+}
+.btncon3_1:hover{
+    background-color: #e60060;
+}
+.subcon3_2_1{
+text-align:center}
+.subcon3_2_2{
+text-align:center}
+.subcon3_2_3{
+text-align-last: right;}
+
+.subcon3_2_4{
+     
+    font-size: 30px;
+    color:#93288e;
+    text-align: end;
+    font-weight: bold;
+}
+.subcon3_2_4:hover{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 2px;
+}
+.SubCon3text1{
+     
+    font-size: 24px;
+    font-weight: bold;
+}
+.SubCon3text2{
+     
+    font-size: 24px;
+    color:#808080;
+}
+.SubCon3text3{
+     
+    font-size: 18px;
+    color:#808080;
+}
+.SubCon3text4{
+     
+    font-size: 30px;
+    font-weight: bold;
+}
+.SubCon3text5{
+     
+    font-size: 12px;
+    color:#808080;
+}
+.mumlak{
+    border-radius: 10px;
+    width: 200px;
+    height: 120px;
+}
+
+.subcon4_1{
+     
+    color:#000e55;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 90px;
+}
+.subcon4_2{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 20px;
+    justify-content: space-between;
+    margin:50px 50px 0px 50px;
+}
+
+.subcon4_3{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+}
+.luxuryimage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.luxury{
+    width:150px;
+    height:150px;
+}
+.subcon4text1{
+    color:#000033;
+     
+    font-size: 16px;
+    text-align: center;
+}
+
+.subcon4text2{
+    color:#000033;
+     
+    font-size: 16px;
+    width: 250px;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+
+.container5{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin:100px 50px 50px 50px;
+    justify-content: center;
+    align-items: center;
+}
+.subcon5{
+display: grid;
+grid-template-rows: 70px 60px 100px;
+margin-left: 20px;}
+.text1con5{
+     
+    font-size: 36px;
+}
+.getitnow{
+    background-color: #93288e;
+    color:white;
+    font-size: 20px;
+     
+    border: none;
+    margin-left: 5px;
+    width:150px;
+    border-radius: 10px;
+    transition: background-color 1s ease-in-out;
+}
+.getitnow:hover{
+    background-color:#e60060;
+    color: white;
+}
+.psas{
+    margin-left: -20px;
+}
+.footersec1{
+    width:100%;
+    height: 500px;
+    margin-top: -10px;
+     
+}
+.footersec1_2{
+    color:white;
+    width:500px;
+    font-size: 16px;
+    text-align: justify;
+}
+.footerimage{
+    width:100%;
+}
+
+
+.WiewText1{
+    position: relative;
+    left: 17px;
+    top: -40px;
+    font-weight: 600;
+     
+    color: white;
+}
+.OceanText1{
+     
+    font-size: 25px;
+    color:white;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-left: -6px;
+}
+.LeftSection1{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+width:150px;
+margin-left: 125px;
+}
+
+
+
+
+
+.socialmedia{
+    display: flex;
+    justify-content: space-between;
+    width:150px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.booknowcon{
+    color:white;
+}
+.booknowsubcon{
+    display: flex;
+    justify-content: space-between;
+    width:130px;
+    margin-top: 10px;
+}
+
+.custsupcon{
+    color:white;
+    margin-top: 25px;
+}
+.custsupsubcon1{
+    display: flex;
+    justify-content: space-between;
+    width:130px;
+    margin-bottom: 5px;
+}
+.time{margin-bottom: 5px;
+font-size: 14px;}
+.bold{
+    font-weight: bold;
+    font-weight: 16px;
+}
+.emaildiv{
+    font-size: 14px;
+}
+.num{font-size: 14px;}
+.custsupsubcon{
+    display: flex;
+    flex-direction: column;
+    width:350px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+.email{
+    display: flex;
+    justify-content: space-between;
+    width:160px;
+    color:white;
+}
+
+.footercol2_1,.footercol3_1{
+    color: #f16f5b;
+     
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.footer{
+     
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color:rgb(20, 42, 78);
+    padding: 0px 50px;
+    margin-top: -10px;
+}
+.footercol2{
+    display: grid;
+    grid-template-rows: repeat(9,1fr);
+    margin-left: 80px;
+    height: 350px;
+    margin-top: 30px;
+}
+.footercol3{
+    margin-left: 40px;
+    height: 400px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-rows: repeat(12,1fr);
+}
+.footercol2_2{
+     
+    font-size: 14px;
+    color:white;
+}
+.footercol3_2{
+     
+    font-size: 14px;
+    color:white;
+}
+
+
+
+
