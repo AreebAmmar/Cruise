@@ -1,20 +1,26 @@
 @media (max-width:360px){
-.fixed-navbar,.breadscrum,.Container1,
-.SubContainer1,.Container2,.Container3,
+.fixed-navbar,.breadscrum,.Container1,.Container3,
 .Container4,.container5,.footerimage,.footer{
 display:none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin:0;
+    font-family:"Playfair Display", serif;
 }
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+/* #region Carousel */
 /* Container fits mobile screen */
 .carousel-container {
     display: block;
     width: 360px;
-    height: 400px; /* Adjust height as needed */
+    height: 350px; /* Adjust height as needed */
     overflow: hidden;
     position: relative;
 }
@@ -34,13 +40,13 @@ display:none;
 }
 
 /* Background images for slides */
-.carousel-item:nth-child(1) { background-image: url(/Carousel/1.webp);background-size: cover; }
-.carousel-item:nth-child(2) { background-image: url(/Carousel/CCCCR12706BS24_W_562x-H_554-Mobile-copy-4_100220251643_393.webp);background-size: cover; }
-.carousel-item:nth-child(3) { background-image: url(/Carousel/CCCCR12706BS24_W_562x-H_554-Mobile-copy-4_100220251751_393.webp);background-size: cover;}
-.carousel-item:nth-child(4) { background-image: url(/Carousel/earlybird_mob.webp);background-size: cover; }
-.carousel-item:nth-child(5) { background-image: url(/Carousel/Holi-Mobile-Banner-562x554_070120251145_404.webp);background-size: cover; }
-.carousel-item:nth-child(6) { background-image: url(/Carousel/Mobile\ 562\ x\ 554\ px\ \(7\).webp);background-size: cover; }
-.carousel-item:nth-child(7) { background-image: url(/Carousel/1.webp);background-size: cover; } /* Duplicate for seamless transition */
+.carousel-item:nth-child(1) { background-image: url(/Carousel/1.webp) }
+.carousel-item:nth-child(2) { background-image: url(/Carousel/CCCCR12706BS24_W_562x-H_554-Mobile-copy-4_100220251643_393.webp); }
+.carousel-item:nth-child(3) { background-image: url(/Carousel/CCCCR12706BS24_W_562x-H_554-Mobile-copy-4_100220251751_393.webp); }
+.carousel-item:nth-child(4) { background-image: url(/Carousel/earlybird_mob.webp); }
+.carousel-item:nth-child(5) { background-image: url(/Carousel/Holi-Mobile-Banner-562x554_070120251145_404.webp); }
+.carousel-item:nth-child(6) { background-image: url(/Carousel/Mobile\ 562\ x\ 554\ px\ \(7\).webp); }
+.carousel-item:nth-child(7) { background-image: url(/Carousel/1.webp); } /* Duplicate for seamless transition */
 
 /* Keyframes for smooth infinite loop */
 @keyframes slide {
@@ -52,4 +58,39 @@ display:none;
     76.16%, 85.68% { transform: translateX(-71.4285%); } /* Slide 6 */
     90.44%, 100% { transform: translateX(-85.7142%); } /* Fake Slide 1 */
 }
+/* #endregion */
+/* #region Sub-Container1 */
+.SubContainer1{
+    padding: 0px 16px;
+    margin-top: 20px;
+}
+.text1subcon1{
+    font-size: 24px;
+    padding: 0px 16px;
+    width: 328px;
+    text-align: center;
+}
+.text2subcon1{
+    font-size: 14px;
+    text-align: center;
+    margin-top: .5rem;
+}
+/* #endregion */
+/* #region Container2 */
+.Container2{
+margin: 30px 0px;
+
+padding: 0px 16px;
+}
+.text1con2{
+    font-size: 24px;
+}
+.text2con2{
+    font-size: 14px;
+    margin-top: 15px;
+}
+.india{
+    margin: 20px 0px;
+}
+/* #endregion */
 }
