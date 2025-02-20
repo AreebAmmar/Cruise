@@ -1,3 +1,4 @@
+/* #region TopHeaderPart */
 @media (max-width:360px){
 .fixed-navbar,.breadscrum,.Container1,.Container3,
 .Container4,.container5,.footerimage,.footer{
@@ -15,6 +16,8 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
+/* #endregion */
+
 /* #region Carousel */
 /* Container fits mobile screen */
 .carousel-container {
@@ -59,6 +62,7 @@ body{
     90.44%, 100% { transform: translateX(-85.7142%); } /* Fake Slide 1 */
 }
 /* #endregion */
+
 /* #region Sub-Container1 */
 .SubContainer1{
     padding: 0px 16px;
@@ -76,12 +80,22 @@ body{
     margin-top: .5rem;
 }
 /* #endregion */
+
 /* #region Container2 */
+
+
 .Container2{
 margin: 30px 0px;
-
 padding: 0px 16px;
 }
+
+.con{
+    display: grid;
+    grid-template-columns:repeat(1,1fr);
+    justify-content: center;
+    align-items: center;
+}
+
 .text1con2{
     font-size: 24px;
 }
@@ -91,6 +105,353 @@ padding: 0px 16px;
 }
 .india{
     margin: 20px 0px;
+}
+/* #endregion */
+
+/* #region image1 */ 
+
+.img1 {
+    position: relative;
+    width: 328px;
+    height: 300px;
+    background: url('/cities/chennaibeach.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.img1::before {
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0);
+    transition: background 0.3s ease-in-out;
+}
+.default-text {
+    position: absolute;
+    transition: opacity 0.3s ease-in-out;
+    color: white;
+    font-size: 30px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.description {
+    font-size: 14px;
+    padding: 0px 10px;
+    color: white;
+    text-align: justify;
+    margin:20px 0px;
+}
+.explore-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+.explore-btn:hover {
+    background: #0056b3;
+}
+.img1:hover::before {
+    background: rgba(0,0,0, 0.5);
+}
+.img1:hover .default-text {
+    opacity: 0;
+}
+.img1:hover .overlay {
+    opacity: 1;
+}
+/* #endregion */
+
+/* #region Image2 */
+.img2 {
+    position: relative;
+    width: 328px;
+    height: 300px;
+    background: url('/cities/goa-dekstop-image.webp') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.img2::before {
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0);
+    transition: background 0.3s ease-in-out;
+}
+.img2:hover::before {
+    background: rgba(0,0,0, 0.5);
+}
+.img2:hover .default-text {
+    opacity: 0;
+}
+.img2:hover .overlay {
+    opacity: 1;
+}
+/* #endregion */
+
+/* #region Image3 */
+.img3{
+    position: relative;
+    width: 328px;
+    height: 300px;
+    background: url('/cities/kochi-dekstop-image.webp') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.img3::before {
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0);
+    transition: background 0.3s ease-in-out;
+}
+.img3:hover::before {
+    background: rgba(0,0,0, 0.5);
+}
+.img3:hover .default-text {
+    opacity: 0;
+}
+.img3:hover .overlay {
+    opacity: 1;
+}
+/* #endregion */
+
+/* #region Image4 */
+.img4{
+    position: relative;
+    width: 328px;
+    height: 300px;
+    background: url('/cities/Andaman.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.img4::before {
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0);
+    transition: background 0.3s ease-in-out;
+}
+.img4:hover::before {
+    background: rgba(0,0,0, 0.5);
+}
+.img4:hover .default-text {
+    opacity: 0;
+}
+.img4:hover .overlay {
+    opacity: 1;
+}
+/* #endregion */
+
+/* #region Image5 */
+.img5{
+    position: relative;
+    width: 328px;
+    height: 300px;
+    background: url('/cities/mumbai-image.webp') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.img5::before {
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0);
+    transition: background 0.3s ease-in-out;
+}
+.img5:hover::before {
+    background: rgba(0,0,0, 0.5);
+}
+.img5:hover .default-text {
+    opacity: 0;
+}
+.img5:hover .overlay {
+    opacity: 1;
+}
+/* #endregion */
+
+/* #region Image6 */
+.img6{
+    position: relative;
+    width: 328px;
+    height: 300px;
+    background: url('/cities/lakshadweep-image.webp') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.img6::before {
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0);
+    transition: background 0.3s ease-in-out;
+}
+.img6:hover::before {
+    background: rgba(0,0,0, 0.5);
+}
+.img6:hover .default-text {
+    opacity: 0;
+}
+.img6:hover .overlay {
+    opacity: 1;
+}
+/* #endregion */
+
+/* #region Image7 */
+.img7{
+    position: relative;
+    width: 328px;
+    height: 300px;
+    background: url('/cities/KashmirBeach.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.img7::before {
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0);
+    transition: background 0.3s ease-in-out;
+}
+.img7:hover::before {
+    background: rgba(0,0,0, 0.5);
+}
+.img7:hover .default-text {
+    opacity: 0;
+}
+.img7:hover .overlay {
+    opacity: 1;
+}
+/* #endregion */
+
+/* #region Image8 */
+.img8{
+    position: relative;
+    width: 328px;
+    height: 300px;
+    background: url('/cities/Nicobar.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.img8::before {
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0);
+    transition: background 0.3s ease-in-out;
+}
+.img8:hover::before {
+    background: rgba(0,0,0, 0.5);
+}
+.img8:hover .default-text {
+    opacity: 0;
+}
+.img8:hover .overlay {
+    opacity: 1;
 }
 /* #endregion */
 }
