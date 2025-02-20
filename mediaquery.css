@@ -1,113 +1,55 @@
 @media (max-width:360px){
-    html{
-        scroll-behavior: smooth;
-    }
-    body{
-        margin:0;
-        font-family:"Playfair Display", serif;
-    }
-    .fixed-navbar {
-        position: fixed;
-        top: 0;
-        left:0;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        height: 50px;
-        width:360px;
-        background-color: rgb(196, 197, 224);
-        color: black;
-        z-index: 1000;
-    }
-    .logoimage{
-        width:40px;
-        height:40px;
-    }
-    .WiewText{
-        position: relative;
-        left: 7px;
-        top: -25px;
-        font-size: 12px;
-        font-weight: 300;
-         
-    }
-    .OceanText{
-         
-        font-size: 15px;
-        font-weight: bold;
-        margin-top: 32px;
-        margin-left: -2px;
-    }
-    .LeftSection{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin-left: 5px;
-    }
-    .RightSection{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 20px;
-        width:420px;
-    }
-    .RightL:hover,.RightM:hover,.RightR:hover{
-        color:white;
-    }
-    .RightL{    
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        width: 80px;
-        font-size: 12px;
-        margin-left: 30px;
-        margin-right: 20px;
-        text-align: center;
-        color: white;
-    }
-    .RightM{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        width: 120px;
-        font-size: 12px;
-        margin-left: 5px;
-    }
-    .RightR{
-        display: none;
-    }
-    .RightL .fa-envelope{
-        display: none;
-    }
+.fixed-navbar,.breadscrum,.Container1,
+.SubContainer1,.Container2,.Container3,
+.Container4,.container5,.footerimage,.footer{
+display:none;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* Container fits mobile screen */
+.carousel-container {
+    display: block;
+    width: 360px;
+    height: 400px; /* Adjust height as needed */
+    overflow: hidden;
+    position: relative;
+}
 
+.carousel {
+    display: flex;
+    width: 700%; /* 7 slides (6 original + 1 duplicate for smooth loop) */
+    height: 100%;
+    animation: slide 21s ease-in-out infinite;
+}
 
-    .breadscrum{
-        height: 40px;
-        width: 360px;
-        background-color: white;
-        color:blue;
-        margin-top: 50px;
-    }
-    .breadscrum ul{
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        color: rgb(84, 84, 180);
-        font-size: 10px;
-        font-weight: bold;
-        margin: 0px 5px;
-        padding: 0;
-    }
-    .breadscrum ul li:hover{
-        text-decoration: underline;
-        text-underline-offset: 10px;
-        text-decoration-thickness: 1px;
-    }
-    
+.carousel-item {
+    flex: 0 0 14.2857%; /* Each item takes ~14.29% */
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Background images for slides */
+.carousel-item:nth-child(1) { background-image: url(/Carousel/1.webp);background-size: cover; }
+.carousel-item:nth-child(2) { background-image: url(/Carousel/CCCCR12706BS24_W_562x-H_554-Mobile-copy-4_100220251643_393.webp);background-size: cover; }
+.carousel-item:nth-child(3) { background-image: url(/Carousel/CCCCR12706BS24_W_562x-H_554-Mobile-copy-4_100220251751_393.webp);background-size: cover;}
+.carousel-item:nth-child(4) { background-image: url(/Carousel/earlybird_mob.webp);background-size: cover; }
+.carousel-item:nth-child(5) { background-image: url(/Carousel/Holi-Mobile-Banner-562x554_070120251145_404.webp);background-size: cover; }
+.carousel-item:nth-child(6) { background-image: url(/Carousel/Mobile\ 562\ x\ 554\ px\ \(7\).webp);background-size: cover; }
+.carousel-item:nth-child(7) { background-image: url(/Carousel/1.webp);background-size: cover; } /* Duplicate for seamless transition */
+
+/* Keyframes for smooth infinite loop */
+@keyframes slide {
+    0%, 14.28% { transform: translateX(0%); } /* Slide 1 */
+    19.04%, 28.56% { transform: translateX(-14.2857%); } /* Slide 2 */
+    33.32%, 42.84% { transform: translateX(-28.5714%); } /* Slide 3 */
+    47.6%, 57.12% { transform: translateX(-42.8571%); } /* Slide 4 */
+    61.88%, 71.4% { transform: translateX(-57.1428%); } /* Slide 5 */
+    76.16%, 85.68% { transform: translateX(-71.4285%); } /* Slide 6 */
+    90.44%, 100% { transform: translateX(-85.7142%); } /* Fake Slide 1 */
+}
 }

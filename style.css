@@ -5,6 +5,7 @@ body{
     margin:0;
     font-family:"Playfair Display", serif;
 }
+.carousel-container{display: none;}
 .fixed-navbar {
     position: fixed;
     top: 0;
