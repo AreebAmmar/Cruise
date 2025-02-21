@@ -7,7 +7,7 @@ body{
     font-family:"Playfair Display", serif;
 }
 .carousel-container{display: none;}
-.Container3mediaquery{
+.Container3mediaquery,.Container2mediaquery{
     display:none;
 }
 /* #endregion */
