@@ -16,7 +16,7 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
-.img6,.img7,.img8,.mumlakmq,.footercol2,.footercol3{
+.mumlakmq,.footercol2,.footercol3{
     display: none;
 }
 /* #endregion */
@@ -86,6 +86,7 @@ body{
 
 
 /* #region Container2FullPack */
+
 /* #region Container2 */
 
 
@@ -119,39 +120,43 @@ padding: 0px 16px;
 
 /* #region image1 */ 
 
-.img1 {
-    position: relative;
-    width: 328px;
+
+.carousel-container-2{
+    width: 100%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    gap: 10px;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Individual Image Blocks */
+.carousel-item-2 {
+    scroll-snap-align: start;
+    min-width: 100%;
     height: 300px;
-    background: url('/cities/chennaibeach.jpg') center/cover no-repeat;
+    border-radius: 10px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Default Text */
+.default-text {
+    position: absolute;
     color: white;
     font-size: 24px;
     font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    border-radius: 10px;
-    overflow: hidden;
-}
-.img1::before {
-    content: "";
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0);
-    transition: background 0.3s ease-in-out;
-}
-.default-text {
-    position: absolute;
-    transition: opacity 0.3s ease-in-out;
-    color: white;
-    font-size: 30px;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    pointer-events: none;
 }
+
+/* Overlay (Hidden by Default) */
 .overlay {
     position: absolute;
     width: 100%;
@@ -160,20 +165,26 @@ padding: 0px 16px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.1);
+    color: white;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
     padding: 20px;
-    text-align: center;
+    border-radius: 10px;
+    pointer-events: none;
 }
 
-
+/* Description */
 .description {
     font-size: 14px;
     padding: 0px 10px;
     color: white;
     text-align: justify;
-    margin:20px 0px;
+    margin: 20px 0px;
 }
+
+/* Explore Button */
 .explore-btn {
     background: #007bff;
     color: white;
@@ -187,168 +198,29 @@ padding: 0px 16px;
 .explore-btn:hover {
     background: #0056b3;
 }
-.img1:hover::before {
-    background: rgba(0,0,0, 0.5);
-}
-.img1:hover .default-text {
-    opacity: 0;
-}
-.img1:hover .overlay {
+
+/* Clickable Overlay Activation */
+.carousel-item-2:focus-within .overlay {
     opacity: 1;
+    pointer-events: auto;
 }
+
+/* Remove Focus Outline */
+.carousel-item-2:focus {
+    outline: none;
+}
+
+/* Images */
+.img1 { background-image: url('/cities/chennaibeach.jpg'); }
+.img2 { background-image: url('/cities/goa-dekstop-image.webp'); }
+.img3 { background-image: url('/cities/kochi-dekstop-image.webp'); }
+.img4 { background-image: url('/cities/Andaman.jpg'); }
+.img5 { background-image: url('/cities/mumbai-image.webp'); }
+.img6 { background-image: url('/cities/lakshadweep-image.webp'); }
+.img7 { background-image: url('/cities/KashmirBeach.jpg'); }
+.img8 { background-image: url('/cities/Nicobar.jpg') }
 /* #endregion */
 
-/* #region Image2 */
-.img2 {
-    position: relative;
-    width: 328px;
-    height: 300px;
-    background: url('/cities/goa-dekstop-image.webp') center/cover no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    border-radius: 10px;
-    overflow: hidden;
-}
-.img2::before {
-    content: "";
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0);
-    transition: background 0.3s ease-in-out;
-}
-.img2:hover::before {
-    background: rgba(0,0,0, 0.5);
-}
-.img2:hover .default-text {
-    opacity: 0;
-}
-.img2:hover .overlay {
-    opacity: 1;
-}
-/* #endregion */
-
-/* #region Image3 */
-.img3{
-    position: relative;
-    width: 328px;
-    height: 300px;
-    background: url('/cities/kochi-dekstop-image.webp') center/cover no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    border-radius: 10px;
-    overflow: hidden;
-}
-.img3::before {
-    content: "";
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0);
-    transition: background 0.3s ease-in-out;
-}
-.img3:hover::before {
-    background: rgba(0,0,0, 0.5);
-}
-.img3:hover .default-text {
-    opacity: 0;
-}
-.img3:hover .overlay {
-    opacity: 1;
-}
-/* #endregion */
-
-/* #region Image4 */
-.img4{
-    position: relative;
-    width: 328px;
-    height: 300px;
-    background: url('/cities/Andaman.jpg') center/cover no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    border-radius: 10px;
-    overflow: hidden;
-}
-.img4::before {
-    content: "";
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0);
-    transition: background 0.3s ease-in-out;
-}
-.img4:hover::before {
-    background: rgba(0,0,0, 0.5);
-}
-.img4:hover .default-text {
-    opacity: 0;
-}
-.img4:hover .overlay {
-    opacity: 1;
-}
-/* #endregion */
-
-/* #region Image5 */
-.img5{
-    position: relative;
-    width: 328px;
-    height: 300px;
-    background: url('/cities/mumbai-image.webp') center/cover no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    border-radius: 10px;
-    overflow: hidden;
-}
-.img5::before {
-    content: "";
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0);
-    transition: background 0.3s ease-in-out;
-}
-.img5:hover::before {
-    background: rgba(0,0,0, 0.5);
-}
-.img5:hover .default-text {
-    opacity: 0;
-}
-.img5:hover .overlay {
-    opacity: 1;
-}
-/* #endregion */
 /* #endregion */
 
 /* #region Container3FullPack */
