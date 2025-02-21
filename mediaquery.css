@@ -1,7 +1,7 @@
 /* #region TopHeaderPart */
 @media (max-width:360px){
 .fixed-navbar,.breadscrum,.Container1,.Container3,
-.Container4,.container5,.footerimage,.footer{
+.container5,.footerimage,.footer{
 display:none;
 }
 html{
@@ -369,6 +369,8 @@ padding: 0px 16px;
     grid-template-columns: 81.5px 135.83px 81.5px 27.16px;
     align-items: center;
     justify-content: space-between;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+
 }
 .text1con3mq{
     font-size:24px;
