@@ -1,6 +1,6 @@
 /* #region TopHeaderPart */
 @media (max-width:360px){
-.fixed-navbar,.breadscrum,.Container1,.Container2,.Container3,.Container4,
+.fixed-navbar,.breadscrum,.Container1,.Container2,.Container3,
 .footerimage,.footer{
 display:none;
 }
@@ -376,15 +376,13 @@ text-align-last: right;}
 /* #endregion */
 
 /* #region Container4 */
-.Container4carmq {
-    display: block;
+.Container4{
     overflow: hidden;
     width: 100%;
     margin: 20px 0;
     padding: 0 16px;
 }
-
-.Con4carouselmq{
+.Con4carousel{
     display: flex;
     gap: 10px;
     scroll-snap-type: x mandatory;
@@ -394,11 +392,11 @@ text-align-last: right;}
     padding-bottom: 10px;
 }
 
-.Con4carouselmq::-webkit-scrollbar {
+.Con4carousel::-webkit-scrollbar {
     display: none; /* Hide scrollbar */
 }
 
-.Con4carousel-itemmq {
+.Con4carousel-item {
     flex: 0 0 100%;
     max-width: 100%;
     scroll-snap-align: start;
@@ -410,33 +408,33 @@ text-align-last: right;}
     padding: 20px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-.luxuryimagemq {
+.subcon4_1{margin: 10px 0px;
+    font-size: 18px;
+}
+.luxuryimage{
     display: flex;
     align-items: center;
     justify-content: center;
-}
 
-.luxurymq {
-    width: 100px;
-    height: 100px;
 }
-
-.subcon4text1mq {
+.luxury{
+    width:100px;
+    height:100px;
+}
+.subcon4text1{
     color: #000033;
     font-size: 16px;
     margin-top: 10px;
     font-weight: bold;
 }
 
-.subcon4text2mq {
+.subcon4text2{
     color: #000033;
     font-size: 14px;
     max-width: 250px;
     margin-top: 10px;
     text-align: justify;
 }
-
 /* #endregion */
 
 /* #region Container5 */
