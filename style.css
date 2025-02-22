@@ -6,8 +6,7 @@ body{
     margin:0;
     font-family:"Playfair Display", serif;
 }
-.carousel-container{display: none;}
-.Container3mediaquery,.Container2mediaquery{
+.carousel-container,.Container4carmq,.Container3mediaquery,.Container2mediaquery{
     display:none;
 }
 /* #endregion */
