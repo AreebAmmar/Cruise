@@ -182,11 +182,9 @@ body{
     margin:50px;
     }
     .text1con2{
-         
         font-size: 50px;
     }
     .text2con2{
-     
     font-size: 25px;
     margin-top: 20px;
     }
@@ -194,7 +192,6 @@ body{
         background-color: rgb(147,40,142);
         color: white;
         padding: 20px 40px;
-         
         font-size: 20px;
         font-weight: bold;
         border: none;
@@ -207,9 +204,6 @@ body{
         background-color:#e60060;
         color: white;
     }
-    
-    
-    
     .con{
         display: grid;
         grid-template-columns:repeat(4,1fr);
@@ -218,9 +212,7 @@ body{
         align-items: center;
         row-gap: 20px;
     }
-    
     /* #region image1 */ 
-    
     .img1 {
         position: relative;
         width: 300px;
@@ -267,11 +259,8 @@ body{
         padding: 20px;
         text-align: center;
     }
-    
-    
     .description {
-        font-size: 14px;
-         
+        font-size: 14px;    
         padding: 0px 10px;
         color: white;
         text-align: justify;
@@ -613,7 +602,6 @@ body{
     border-radius: 5px;
     padding: 15px 15px;
     font-family:"Playfair Display", serif;
-
     font-size: 15px;
     font-weight: bold;
     transition: color 1s ease-in-out,background-color 1s ease-in-out;

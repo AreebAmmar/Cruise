@@ -87,9 +87,8 @@ body{
 /* #region Container2FullPack */
 
 /* #region Container2 */
-
-
 .Container2mediaquery{
+font-family:"Playfair Display", serif;
 display: block;
 margin: 0;
 padding: 0px 16px;
@@ -106,6 +105,11 @@ padding: 0px 16px;
     padding: 10px 25px;
     font-size: 20px;
     font-weight: bold;
+    background-color: rgb(147,40,142);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: color 1s ease-in-out,background-color 1s ease-in-out;
 }
 .india:hover{
     background-color:#e60060;
@@ -114,9 +118,7 @@ padding: 0px 16px;
 /* #endregion */
 
 /* #region image1 */ 
-
-
-.carousel-container-2{
+.carousel-container-2 {
     width: 100%;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -149,6 +151,7 @@ padding: 0px 16px;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
     pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
 }
 
 /* Overlay (Hidden by Default) */
@@ -161,7 +164,7 @@ padding: 0px 16px;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.6); /* Darker background for better readability */
     color: white;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
@@ -194,10 +197,15 @@ padding: 0px 16px;
     background: #0056b3;
 }
 
-/* Clickable Overlay Activation */
-.carousel-item-2:focus-within .overlay {
+/* Hover Effect */
+.carousel-item-2:hover .overlay {
     opacity: 1;
     pointer-events: auto;
+}
+
+/* Hide Default Text on Hover */
+.carousel-item-2:hover .default-text {
+    opacity: 0;
 }
 
 /* Remove Focus Outline */
@@ -213,7 +221,8 @@ padding: 0px 16px;
 .img5 { background-image: url('/cities/mumbai-image.webp'); }
 .img6 { background-image: url('/cities/lakshadweep-image.webp'); }
 .img7 { background-image: url('/cities/KashmirBeach.jpg'); }
-.img8 { background-image: url('/cities/Nicobar.jpg') }
+.img8 { background-image: url('/cities/Nicobar.jpg'); }
+
 /* #endregion */
 
 /* #endregion */
@@ -319,55 +328,6 @@ text-align-last: right;}
     width: 200px;
     height: 120px;
 }
-
-.subcon4_1mq{
-     
-    color:#000e55;
-    font-size: 36px;
-    text-align: center;
-    margin-top: 90px;
-}
-.subcon4_2mq{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    column-gap: 20px;
-    justify-content: space-between;
-    margin:50px 50px 0px 50px;
-}
-
-.subcon4_3mq{
-    display: grid;
-    grid-template-rows: repeat(3,1fr);
-    height: 250px;
-    align-items: center;
-    justify-content: center;
-}
-.luxuryimagemq{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-.luxurymq{
-    width:150px;
-    height:150px;
-}
-.subcon4text1mq{
-    color:#000033;
-     
-    font-size: 16px;
-    text-align: center;
-}
-
-.subcon4text2mq{
-    color:#000033;
-     
-    font-size: 16px;
-    width: 250px;
-    margin-top: 10px;
-    text-align: justify;
-}
-
 /* #endregion */
 
 /* #region Container4 */
