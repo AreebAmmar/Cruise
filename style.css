@@ -8,7 +8,7 @@ body{
     font-family:"Playfair Display", serif;
 }
 .carousel-container{display: none;}
-.Container3mediaquery,.Container2mediaquery,.Container4mediaquery{
+.Container3mediaquery,.Container2mediaquery,.Container4mediaquery,.footermq{
     display:none;
 }
 /* #endregion */
@@ -763,8 +763,6 @@ margin-left: 20px;}
 .footerimage{
     width:100%;
 }
-
-
 .WiewText1{
     position: relative;
     left: 17px;

@@ -1,7 +1,6 @@
 @media only screen and (max-width:360px){
 /* #region TopHeaderPart */
-.fixed-navbar,.breadscrum,.Container1,.Container2,.Container3,.Container4,
-.footerimage,.footer{
+.fixed-navbar,.breadscrum,.Container1,.Container2,.Container3,.Container4,.footer,.footercol2mq,.footercol3mq{
 display:none;
 }
 html{
@@ -421,9 +420,81 @@ text-align-last: right;}
     border: none;
     border-radius: 5px;
 }
+.getitnow:hover{
+    background-color:#e60060;
+    color: white;
+}
 .psas{
     width: 360px;
     padding: 0px 16px;
 }
 /* #endregion */
+
+/* #region Footer */
+.footermq{
+    display: block;
+    background-color:rgb(20, 42, 78);
+    color: white;
+    margin-top: -4px;
+    padding: 0px 16px 30px 16px;
+
+}
+.footerimage{width: 100%;}
+
+
+.logoimagemq{
+    width:80px;
+    height:80px;
+}
+.WiewText1mq{
+    position: relative;
+    left: 20px;
+    top: -10px;
+    font-weight: 600;
+    color: white;
+}
+.OceanText1mq{
+     position: relative;
+     top:25px;
+     left: -5;
+    font-size: 25px;
+    color:white;
+    font-weight: bold;
+}
+.LeftSection1mq{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+.footersec1_2mq{
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.socialmediamq{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+margin-bottom: 20px;
+}
+.booknowsubconmq{
+    display: flex;
+    margin-top: 10px;
+}
+.custsupconmq{
+    margin: 25px 0px;
+}
+.custsupsubcon1mq{
+    display: flex;
+    margin: 10px 0px;
+}
+.timemq{
+    margin-bottom: 10px;
+}
+.emailmq{
+    display: flex;
+}
+.emaildivmq{
+    margin-left: 10px;
+}
+    /* #endregion */
 }
