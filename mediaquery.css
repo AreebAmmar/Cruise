@@ -90,7 +90,7 @@ body{
 .Container2mediaquery{
 font-family:"Playfair Display", serif;
 display: block;
-margin: 0;
+margin-top: 30px;
 padding: 0px 16px;
 }
 .text1con2{
@@ -102,7 +102,7 @@ padding: 0px 16px;
 }
 .india{
     margin: 20px 0px;
-    padding: 10px 25px;
+    padding: 10px 20px;
     font-size: 20px;
     font-weight: bold;
     background-color: rgb(147,40,142);
@@ -230,7 +230,7 @@ padding: 0px 16px;
 /* #region Container3FullPack */
 .Container3mediaquery{
     display: block;
-    margin: 0;
+    margin-top:30px;
     padding: 0px 16px;
 }
 
@@ -288,7 +288,7 @@ text-align-last: right;}
      
     font-size: 25px;
     color:#93288e;
-    text-align: center;
+    text-align: right;
     font-weight:bolder;
 }
 .subcon3_2_4mq:hover{
@@ -392,7 +392,38 @@ text-align-last: right;}
 /* #endregion */
 
 /* #region Container5 */
-
-
+.container5{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    font-family:"Playfair Display", serif;
+}
+.mobileapp{
+    width:360px;
+    padding: 0px 16px;
+    align-items: center;
+}
+.text1con5{
+    text-align: center;
+    width: 360px;
+    padding: 0px 16px;
+}
+.getitnowcon{
+    width: 360px;
+    padding: 0px 16px;
+    display: grid;
+    justify-content: center;
+}
+.getitnow{
+    margin-top: 15px;
+    padding: 10px 30px;
+    background-color: #93288e;
+    color:white;
+    border: none;
+    border-radius: 5px;
+}
+.psas{
+    width: 360px;
+    padding: 0px 16px;
+}
 /* #endregion */
 }
